@@ -83,7 +83,7 @@ func main() {
 	vari, _ := stats.StandardDeviation(timeList.items)
 	min, _ := stats.Min(timeList.items)
 	max, _ := stats.Max(timeList.items)
-	fmt.Printf("[CG-DNStestet] Max: %.1f ms, Min: %.1f ms, Mean: %.1f ms, StdDev: %.1f ms\n", max, min, mean, vari)
+	fmt.Printf("[CG-DNStester] Max: %.1f ms, Min: %.1f ms, Mean: %.1f ms, StdDev: %.1f ms\n", max, min, mean, vari)
 }
 
 func resolveAdresses(timeList *ConcurrentIntSlice, wg *sync.WaitGroup, r net.Resolver, listOfDomains *[]string, i, j int) {
