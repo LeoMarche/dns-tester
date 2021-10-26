@@ -1,4 +1,4 @@
-module gitlab.com/chartreuse-gaming/dns-tester
+module github.com/LeoMarche/dns-tester
 
 go 1.15
 
