@@ -9,8 +9,10 @@ At the end of the program, the tester prints stats about the time needed by each
 
 ## Build instructions
 
+- Install the latest version of golang and make sure it's accessible through path
 - Clone project
 - cd into the repo directory
+- Type ```go mod tidy```
 - Type ```go build```
 
 ## Usage instructions
