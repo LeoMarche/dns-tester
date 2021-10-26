@@ -46,7 +46,7 @@ func main() {
 	}
 
 	//Retrieve list of domains
-	f, err := os.Open("top-1m-corrected.csv")
+	f, err := os.Open("data/top-1m-corrected.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -55,6 +55,10 @@ func main() {
 	domainList := []string{}
 	for scanner.Scan() {
 		domainList = append(domainList, scanner.Text())
+	}
+
+	if *nReq > len(domainList) {
+		fmt.Println("[CG-DNStester] Error: total number of requests must be < " + fmt.Sprint(len(domainList)))
 	}
 
 	//Launching clients
